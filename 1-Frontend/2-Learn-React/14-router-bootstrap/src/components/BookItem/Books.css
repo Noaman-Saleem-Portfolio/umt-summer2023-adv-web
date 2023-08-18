@@ -1,0 +1,9 @@
+.book-item-column{
+    border: 1px solid grey;
+    padding: 15px;
+}
+
+.book-price{
+    color: red;
+    font-weight: bold;
+}

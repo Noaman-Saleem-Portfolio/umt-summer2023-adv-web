@@ -1,0 +1,55 @@
+* {
+    box-sizing: border-box;
+    font-family: Inter, sans-serif;
+}
+
+body{
+    margin: 0;
+    background-color: #282d35;
+    background-image: url("react-icon-large.png");
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: 75%;
+    /* background-color: yellow; */
+    height: 100vh;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #21222a;
+    color: aliceblue;
+    padding: 0px 20px;
+}
+
+.nav-logo{
+    display: flex;
+    color: #00ccff;
+    align-items: center;
+}
+
+.nav-logo img{
+    width: 50px;
+}
+
+.nav-logo p {
+   font-weight: bold;
+   font-size: 30px;
+   margin-left: 20px;
+}
+
+.nav-text{
+    font-weight: bold;
+    /* margin-left: auto; */
+}
+
+.main-content{
+    padding: 30px;
+    color: white;
+    
+}
+
+.main-content h1{
+    font-size: 40px;
+}
