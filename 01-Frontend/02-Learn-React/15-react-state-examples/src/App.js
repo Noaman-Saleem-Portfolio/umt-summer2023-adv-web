@@ -1,9 +1,11 @@
-import logo from "./logo.svg";
 import "./App.css";
-import Room from "./components/Room/Room";
+// import Counter from "./components/1-counter-example/Counter";
+// import Room from "./components/2-room-example/Room";
+// import Things from "./components/3-complex-state-arrays/Things";
+import Student from "./components/4-complex-state-objects/Student";
 
 function App() {
-  return <Room />;
+  return <Student />;
 }
 
 export default App;
