@@ -1,0 +1,12 @@
+input{
+    display:block;
+    margin-bottom: 10px;
+}
+
+input[type="checkbox"]{
+    display: inline-block;
+}
+
+fieldset input{
+    display: inline-block;
+}
