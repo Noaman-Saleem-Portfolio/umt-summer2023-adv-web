@@ -1,22 +1,25 @@
 import React from "react";
-import Box from "./Box";
 import boxes from "./boxes";
+
+import "./Box.css";
 
 const Main = () => {
   const [squares, setSquares] = React.useState(boxes);
 
-  function toggle(id) {
-    setSquares((prevSquares) => {
-      return prevSquares.map((square) => {
-        return square.id === id ? { ...square, on: !square.on } : square;
-      });
-    });
-  }
   return (
     <main>
-      {squares.map((square) => (
-        <Box key={square.id} on={square.on} toggle={() => toggle(square.id)} />
-      ))}
+      {squares.map((square) => {
+        return (
+          <div
+            className="box"
+            // Hint --> onClick event will run a call back function
+            // That will be passed as onClick={() => yourFunction(square.id)} instead of onClick={yourFunction(square.id)}
+            // We are passing the square.id in order to recognise which bax was clicked
+
+            style={{ backgroundColor: square.on ? "#222222" : "transparent" }}
+          ></div>
+        );
+      })}
     </main>
   );
 };
