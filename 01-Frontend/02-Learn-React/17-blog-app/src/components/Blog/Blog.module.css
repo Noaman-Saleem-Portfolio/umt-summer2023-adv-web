@@ -1,0 +1,13 @@
+.blog{
+    /* text-align: center; */
+    padding: 20px;
+}
+
+.blogImgDiv{
+    text-align: center;
+}
+
+.blogImg{
+    width: 200px;
+    height: 200px;
+}
