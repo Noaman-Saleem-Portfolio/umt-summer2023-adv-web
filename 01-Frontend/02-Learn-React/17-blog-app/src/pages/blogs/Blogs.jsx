@@ -11,7 +11,7 @@ const Blogs = () => {
         const getAllBlogsApi = async () => {
             try {
                 const response =await axios.get("http://localhost:8000/api/v1/blog/all")
-                console.log(response);
+                // console.log(response);
                 setBlogs(response.data.blogs)
             } catch (error) {
                 console.log(error);
@@ -31,10 +31,11 @@ const Blogs = () => {
         )
     }
 
-  return (
-    <Blog/>
+  return <div>
+    {blogs.map((blog) => <Blog title={blog.title} imageUrl={blog.imageUrl} description={blog.description} numberOfLikes={blog.numberOfLikes} blogId={blog._id} />)}
+  </div>
     
-  )
+  
 }
 
 export default Blogs

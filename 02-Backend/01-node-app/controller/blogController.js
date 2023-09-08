@@ -42,6 +42,24 @@ const blogController = {
       return next(error);
     }
   },
+
+  // **********************************************
+  // get blog by id
+  // **********************************************
+
+  getById: async function (req, res) {
+    // console.log(req.params);
+
+    const { id } = req.params;
+
+    let blog;
+    try {
+      blog = await Blog.findOne({ _id: id });
+    } catch (error) {
+      return next(error);
+    }
+    res.status(200).json({ blog });
+  },
 };
 
 module.exports = blogController;
